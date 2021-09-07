@@ -7,19 +7,59 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FAQ</title>
 
- <nav>
-  <a href="index.html">Hoofdpagina</a>
-</nav>
-
-<nav>
-  <a href="blog.html">Blog</a>
-</nav>
-
-<nav>
-    <a href="profile.html"> profile
-</nav>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <ul>
+      <li><a class="active" href="index.html">Hoofdpagina</a></li>
+      <li><a href="profile.html">Wie ben ik</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    
+    </body>
 </header>
 
 <main>
+   
     <h1>FAQ</h1>
-</main>
+    <h3>Hier worden veel gestelde vragen beantwoord.</h3>
+</main> 
+
+<aside><style>div{
+    background-color: #333;
+    color:white 
+}
+</style>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+      </div>
+   </aside>
