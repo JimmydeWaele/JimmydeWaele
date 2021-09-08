@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FAQ</title>
-
   <style>
     ul {
       list-style-type: none;
@@ -14,6 +13,7 @@
       padding: 0;
       overflow: hidden;
       background-color: #333;
+      position:sticky;
     }
     
     li {
@@ -33,33 +33,118 @@
     }
     </style>
     </head>
+
     <body>
-    
     <ul>
       <li><a class="active" href="index.html">Hoofdpagina</a></li>
       <li><a href="profile.html">Wie ben ik</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="faq.html">FAQ</a></li>
     </ul>
-    
-    </body>
+    </body>  
 </header>
 
 <main>
-   
-    <h1>FAQ</h1>
-    <h3>Hier worden veel gestelde vragen beantwoord.</h3>
-</main> 
 
-<aside><style>div{
-    background-color: #333;
-    color:white 
-}
-</style>
-    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
-        <h3 class="w3-bar-item">Menu</h3>
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button">Link 3</a>
-      </div>
-   </aside>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 89%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 86%;
+    padding-right:27px
+  }
+  </style>
+  </head>
+  <button type="button" class="collapsible">Hoe print je een document op de HZ</button>
+<div class="content">
+  <p>Antwoord 1</p>
+</div>
+<button type="button" class="collapsible">Hoe scan je een document en stuur je dit naar je laptop op de HZ</button>
+<div class="content">
+  <p>Antwoord 2</p>
+</div>
+<button type="button" class="collapsible">Wat moet je doen als je ziek bent of symptomen van het corona virus hebt?</button>
+<div class="content">
+  <p>Antwoord 3</p>
+</div>
+<button type="button" class="collapsible">Hoe kun je een projectruimte boeken in een van de vleugels van het gebouw</button>
+<div class="content">
+  <p>Antwoord 4</p>
+</div>
+<button type="button" class="collapsible">Wat zijn de instructies om je auto te parkeren op de HZ parkeerterrein?</button>
+<div class="content">
+  <p>Antwoord 5</p>
+</div>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+</body>
+
+<aside>
+  <style>
+    li{
+      color:white;
+      position:sticky;
+      overflow:hidden;
+      list-style-type: none;
+      text-align: left;
+      position:sticky;
+    }
+    aside{
+      width:10%;
+      padding-left:15px;
+      padding-right:50px
+      margin-left:15px;
+      float:right;
+      background: color #333;
+      position:sticky;
+      
+    }
+    h3{
+      padding-left:50px
+    }
+  </style>
+ 
+  <li><h3>Aside</h3></li>
+  <li><a href=https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/HZ-Onderwijs-en-Examenregeling-2021-2022.pdf>HZ Onderwijs en Examenregeling 2021-2022</a></li>
+  <li><a href=https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf>HBO-ICT Implementation Regulations 2021</a></li>
+  <li><a href=https://learn.hz.nl>HZ Learn</a></li>
+  <li><a href=https://teams.microsoft.com/l/channel/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/General?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c>HBO-ICT Teams pagina</a></li>
+  <li><a href=https://apps.hz.nl/angular/studievoortgang/studiestatus>Studievoortgang</a></li>
+  <li><a href=https://github.com/HZ-HBO-ICT>Github</a></li>
+ </aside>
+    
+</main> 
