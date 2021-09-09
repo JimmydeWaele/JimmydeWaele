@@ -1,14 +1,14 @@
 #navbar
 ul{
-    list-style-type: none;
+   
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position:sticky;
   }
   
   li {
+    list-style-type: none;
     float: left;
     text-align: center;
   }
@@ -26,25 +26,26 @@ ul{
   }
   
   #sidebar
-  ul {
-    list-style-type: none;
+  div {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color:#333;
     position:sticky;
   }
   
   li {
     float: left;
     text-align: center;
+    list-style-type: none;
   }
-  
+
   li a {
     display: block;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
+    width:100%
   }
   
   li a:hover {
