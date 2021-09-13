@@ -8,13 +8,15 @@
  <title>Wie ben ik</title>
 
  <style>
-  ul {
+  ol {
+    position:fixed; top:0px; left:0px;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position:sticky;
+    width:100%
+    
   }
   
   li {
@@ -36,17 +38,17 @@
   </head>
   <body>
   
-  <ul>
+  <ol>
     <li><a class="active" href="index.html">Hoofdpagina</a></li>
     <li><a href="profile.html">Wie ben ik</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li><a href="faq.html">FAQ</a></li>
     <li><a href="dashboard.html">Dashboard</a></li>
-  </ul>
+  </ol>
   
   </body>
 
- <h1>Wie ben ik </h1>
+ <h1 style="margin-top: 55px";>Wie ben ik </h1>
 </header>
 
 <main>
@@ -56,62 +58,60 @@
         width:25%;
         background-color:rgba(51, 51, 51, 0.397);
       }
-      
-
     </style>
-<p>Mijn naam is Jimmy de Waele, ik ben 18 jaar en ben sinds dit schooljaar begonnen met de opleiding HBO-ICT op het HZ in Middelburg.
-Voor het maken van deze website had ik nog geen ervaring met programmeren Dus er viel veel te leren, desondanks vind ik het een erg leuk en leerzaam project</p>
-</article>
-<article>
-    <style>
-      p{
-        width:25%;
-        background-color:rgba(51, 51, 51, 0.397);
-      }
-    </style>  </aside>
-  <aside><ol><h3>Hobby's</h3>
-  <style>
-      li{
-        list-style-type: disc;
-      }
-    </style>
-  <li>Skateboarden</li>
-  <li>Gamen</li>
-  <li>Films kijken</li>
-  </ol>
-</aside>
-</article>
-
+<p>Mijn naam is Jimmy de Waele, ik ben 18 jaar en ik woon in Hoek, Zeeuws-Vlaanderen. Mijn hobbies zijn: gamen (shooters, race simulaties), skateboarden, films kijken (actie, comedy, sci-fi).   </p>
+  </article>
+</main>
 
 <aside>
   <style>
-    li{
-      color:white;
-      position:sticky;
-      overflow:hidden;
-      list-style-type: none;
-      text-align: center;
-    }
-    aside{
+    .sidebar{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; bottom:0px;
+  }
+
+  li {
+    float: left;
+    text-align: left;
+    list-style-type: none;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align:center;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+ 
+  aside {
       width:10%;
       margin-left: 15px;
       float:right;
       background-color: #333;
     }
-    h3{
-      padding-left:50px
-    }
   </style>
- 
-  <li><h3>Aside</h3></li>
-  <li><a href=https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/HZ-Onderwijs-en-Examenregeling-2021-2022.pdf>HZ Onderwijs en Examenregeling 2021-2022</a></li>
-  <li><a href=https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf>HBO-ICT Implementation Regulations 2021</a></li>
-  <li><a href=https://learn.hz.nl>HZ Learn</a></li>
-  <li><a href=https://teams.microsoft.com/l/channel/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/General?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c>HBO-ICT Teams pagina</a></li>
-  <li><a href=https://apps.hz.nl/angular/studievoortgang/studiestatus>Studievoortgang</a></li>
-  <li><a href=https://github.com/HZ-HBO-ICT>Github</a></li>
- </aside>
-</main>
+    <div class="sidebar">
+      <li><a href=https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/HZ-Onderwijs-en-Examenregeling-2021-2022.pdf>HZ
+        Onderwijs en Examenregeling 2021-2022</a></li>
+      <li><a
+        href=https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf>HBO-ICT
+        Implementation Regulations 2021</a></li>
+      <li><a href=https://learn.hz.nl>HZ Learn</a></li>
+      <li><a
+        href=https://teams.microsoft.com/l/channel/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/General?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c>HBO-ICT
+        Teams pagina</a></li>
+      <li><a href=https://apps.hz.nl/angular/studievoortgang/studiestatus>Studievoortgang</a></li>
+      <li><a href=https://github.com/HZ-HBO-ICT>Github</a></li>
+    </div class="sidebar">
+  </aside>
 
 </html>
 <git add profile.html> </git> 
