@@ -8,89 +8,107 @@
   <title>Wie ben ik</title>
 
   <style>
-    .navbar{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: purple;
-  }
+    .navbar {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: purple;
+      border: rgb(92, 46, 92) solid 2px;
+    }
 
-  .active {
-    background-color: rgb(84, 18, 97);
-  }
+    .active {
+      background-color: rgb(84, 18, 97);
+    }
 
-  li {
-    list-style-type: none;
-    float: left;
-    text-align: center;
-  }
+    li {
+      list-style-type: none;
+      float: left;
+      text-align: center;
+    }
 
-  li a {
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: purple;
-  }
+    li a {
+      display: block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      background-color: purple;
+    }
 
-  li a:hover {
-    background-color: rgb(84, 18, 97);
-  }
+    li a:hover {
+      background-color: rgb(84, 18, 97);
+    }
 
-  .sidebar {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: purple;
-    position: fixed;
-    bottom: 140px;
-    right: 0px;
-    width: 10%;
-    border:black solid 1px;
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: purple;
+      position: fixed;
+      bottom: 140px;
+      right: 0px;
+      width: 10%;
+      border: black solid 1px;
 
-  }
+    }
 
-  li {
-    float: center;
-    text-align: center;
-    list-style-type: none;
-  }
+    li {
+      float: center;
+      text-align: center;
+      list-style-type: none;
+    }
 
-  li a {
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-align: center;
-  }
+    li a {
+      display: block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      text-align: center;
+    }
 
-  li a:hover {
-    background-color: rgb(84, 18, 97);
-  }
+    li a:hover {
+      background-color: rgb(84, 18, 97);
+    }
 
     .intro {
-      width: 17%;
+      width: 70%;
       margin-top: 55px;
       background-color: rgba(84, 18, 97, 0.651);
       color: white;
-      border:black solid 2px
+      border: white solid 2px
     }
+
+    .intro p {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
     .achtergrond {
-    background-image: linear-gradient(90deg, purple, pink);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
+      background-image: linear-gradient(90deg, purple, pink);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    iframe {
+      position: absolute;
+      right: 224px;
+      bottom: 32px;
+    }
+
+    .skate img {
+      margin-left: 128px;
+      margin-top: 32px;
     }
   </style>
 
   <body class="achtergrond">
     <ol class="navbar">
       <li><a href="index.html"><img src="hz-logo.png"></a></li>
-      <li><a  href="index.html">Hoofdpagina</a></li>
+      <li><a href="index.html">Hoofdpagina</a></li>
       <li><a class="active" href="profile.html">Wie ben ik</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="faq.html">FAQ</a></li>
@@ -101,12 +119,23 @@
 
 <main>
   <article class="intro">
-    <p>Mijn naam is Jimmy de Waele, ik ben 18 jaar en ik woon in Hoek, Zeeuws-Vlaanderen. Mijn hobbies zijn: gamen
-      (shooters, race simulaties), skateboarden, films kijken (actie, comedy, sci-fi). </p>
+    <p>Mijn naam is Jimmy de Waele, ik ben 18 jaar en ben geboren in Terneuzen maar ik woon in Hoek, Zeeuws-Vlaanderen.
+    </p>
+    <p>Mijn hobby's zijn: gamen (shooters, race simulaties), skateboarden, films kijken (actie, comedy, sci-fi).</p>
+    <p>HBO-ICT is niet mijn eerste opleiding, ik heb vorig jaar namelijk een jaar Sportkunde gedaan op de HZ in
+      Vlissingen.
+      Daarvoor heb ik mijn HAVO diploma gehaald op het Lodewijk College in Terneuzen.</p>
+    <p>Hieronder zie je een foto van mij met mijn meest recente skateboard,
+      rechts daarvan zie je een video van mij waarin ik allemaal trucjes doe op mijn board waar ik aan het skaten ben
+      met mijn vrienden</p>
   </article>
-    <img  src="IMG_4784.jpg">
-    <img src="cod.png">
-  
+
+  <aside class="skate">
+    <img src="IMG_4784.jpg">
+  </aside>
+
+  <iframe width="650" height="400" src="https://youtube.com/embed/zxEC4QTzgn0"></iframe>
+
 </main>
 
 <aside>
