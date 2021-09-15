@@ -6,8 +6,96 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Hoofdpagina</title>
-<link rel="stylesheet" href="index.css">
 
+<style>
+
+.navbar ol {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: purple;
+}
+.active{
+  background-color:rgb(84, 18, 97)
+}
+
+li {
+  list-style-type: none;
+  float: left;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: purple;
+}
+
+li a:hover {
+  background-color: rgb(84, 18, 97);
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: purple;
+  position: fixed;
+  bottom: 140px;
+  right: 0px;
+  width: 10%;
+  border:black solid 1px;
+
+}
+
+li {
+  float: center;
+  text-align: center;
+  list-style-type: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+li a:hover {
+  background-color: rgb(84, 18, 97);
+}
+
+.achtergrond {
+  background-image: linear-gradient(90deg, pink,purple);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+  table, th, td {
+    border: white solid 2px;
+    margin-left:15px;
+    margin-bottom:10px;
+  }
+.intro {
+width:90%;
+color:white;
+background-color:rgba(84, 18, 97, 0.651);
+padding-bottom:15px;
+padding-top:6px;
+border:black solid 2px
+}
+p {
+  margin-left:15px;
+}
+</style>
+<body class="achtergrond">
 <header>
   <div class="navbar">
     <ol>
@@ -23,6 +111,7 @@
 
 <main>
   <article class="intro">
+    <p>.</p>
     <p>Welkom bij mijn portfolio</p>
     <p>Op deze site is mijn vooruitgang te vinden met programmeren en het maken van een website </p>
     <p>Ik ben begonnen met gamen toen ik in groep 2 zat, sindsdien gaat er voor mij bijna geen week voorbij zonder een
@@ -44,7 +133,7 @@
       </tr>
       <tr>
         <td>Blog</td>
-        <td>Er word elke dag bijgehouden wat ik die dag heb gedaan en heb geleerd</td>
+        <td>Een overzicht van mijn Program & Career Orientation ervaringen</td>
       </tr>
       <tr>
         <td>FAQ</td>
@@ -76,5 +165,6 @@
   </div>
 </aside>
 
+</body>
 </html>
 <git add profile.html> </git>

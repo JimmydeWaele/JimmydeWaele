@@ -8,82 +8,90 @@
   <title>Wie ben ik</title>
 
   <style>
-    .navbar {
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-      width: 100%
-    }
+    .navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: purple;
+  }
 
-    li {
-      float: left;
-    }
+  .active {
+    background-color: rgb(84, 18, 97);
+  }
 
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
+  li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+  }
 
-    li a:hover {
-      background-color: #111;
-    }
+  li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: purple;
+  }
 
-    .sidebar {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-      position: fixed;
-      bottom: 140px;
-    }
+  li a:hover {
+    background-color: rgb(84, 18, 97);
+  }
 
-    li {
-      float: left;
-      text-align: left;
-      list-style-type: none;
-    }
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: purple;
+    position: fixed;
+    bottom: 140px;
+    right: 0px;
+    width: 10%;
+    border:black solid 1px;
 
-    li a {
-      display: block;
-      color: white;
-      padding: 14px 16px;
-      text-decoration: none;
-      text-align: center;
-    }
+  }
 
-    li a:hover {
-      background-color: #111;
-    }
+  li {
+    float: center;
+    text-align: center;
+    list-style-type: none;
+  }
 
-    aside {
-      width: 10%;
-      margin-left: 15px;
-      float: right;
-      background-color: #333;
-    }
+  li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  li a:hover {
+    background-color: rgb(84, 18, 97);
+  }
 
     .intro {
       width: 17%;
       margin-top: 55px;
-      background-color: lightcoral;
+      background-color: rgba(84, 18, 97, 0.651);
       color: white;
-      border: black solid 2px;
+      border:black solid 2px
+    }
+    .achtergrond {
+    background-image: linear-gradient(90deg, purple, pink);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
     }
   </style>
 
-  <body>
+  <body class="achtergrond">
     <ol class="navbar">
       <li><a href="index.html"><img src="hz-logo.png"></a></li>
-      <li><a class="active" href="index.html">Hoofdpagina</a></li>
-      <li><a href="profile.html">Wie ben ik</a></li>
+      <li><a  href="index.html">Hoofdpagina</a></li>
+      <li><a class="active" href="profile.html">Wie ben ik</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="dashboard.html">Dashboard</a></li>
@@ -96,6 +104,9 @@
     <p>Mijn naam is Jimmy de Waele, ik ben 18 jaar en ik woon in Hoek, Zeeuws-Vlaanderen. Mijn hobbies zijn: gamen
       (shooters, race simulaties), skateboarden, films kijken (actie, comedy, sci-fi). </p>
   </article>
+    <img  src="IMG_4784.jpg">
+    <img src="cod.png">
+  
 </main>
 
 <aside>

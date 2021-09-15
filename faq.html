@@ -20,6 +20,9 @@
       left: 0px;
       width: 100%;
     }
+    .active {
+      background-color:rgb(84, 18, 97)
+    }
 
     li {
       float: left;
@@ -47,10 +50,10 @@
       text-align: left;
       outline: none;
       font-size: 15px;
-      
+      border:black solid 1px;
     }
 
-    .active,
+    .cactive,
     .collapsible:hover {
       background-color: rgb(128, 0, 128);
     }
@@ -58,9 +61,14 @@
     .content {
       display: none;
       overflow: hidden;
-      background-color: pink;
+      background-color: rgba(128, 0, 128, 0.342);
       width: 100%;
-      color: black;
+      color: white;
+      border:black solid 1px;
+
+    }
+    p {
+      margin-left:15px;
     }
 
     .sidebar {
@@ -72,6 +80,8 @@
       bottom: 140px;
       right: 0px;
       width: 10%;
+      border:black solid 1px;
+
     }
 
     li {
@@ -96,16 +106,17 @@
       background-image: linear-gradient(45deg, pink, purple);
       background-repeat: no-repeat;
       background-attachment: fixed;
+      font-family: 'Roboto', sans-serif;
     }
   </style>
 
   <body class="navbar">
     <ul>
       <li><a href="index.html"><img src="hz-logo.png"></a></li>
-      <li><a class="active" href="index.html">Hoofdpagina</a></li>
+      <li><a  href="index.html">Hoofdpagina</a></li>
       <li><a href="profile.html">Wie ben ik</a></li>
       <li><a href="blog.html">Blog</a></li>
-      <li><a href="faq.html">FAQ</a></li>
+      <li><a class="active" href="faq.html">FAQ</a></li>
       <li><a href="dashboard.html">Dashboard</a></li>
     </ul>
   </body>
@@ -120,7 +131,7 @@
   <button type="button" class="collapsible">Hoe print je een document op de HZ</button>
   <div class="content">
     <p>Stap 1: Ga naar https://print.hz.nl</p>
-    <p>stap 2: Selecteer het bestand wat je wilt printen</p>
+    <p>Stap 2: Selecteer het bestand wat je wilt printen</p>
     <p>Stap 3: Selecteer de printer waar je het naartoe wilt sturen (HZ plotter of HZ printer)</p>
     <p>Stap 4: Ga naar de printer en log in met je studentenpas, selecteer het juiste bestand en druk op print</p>
   </div>
@@ -159,7 +170,7 @@
 
     for (i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
+        this.classList.toggle("cactive");
         var content = this.nextElementSibling;
         if (content.style.display === "block") {
           content.style.display = "none";

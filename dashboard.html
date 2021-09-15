@@ -20,6 +20,10 @@
     background-color: purple;
   }
 
+  .active {
+    background-color: rgb(84, 18, 97);
+  }
+
   li {
     list-style-type: none;
     float: left;
@@ -47,6 +51,8 @@
     bottom: 140px;
     right: 0px;
     width: 10%;
+    border:black solid 1px;
+
   }
 
   li {
@@ -72,26 +78,108 @@
   td {
     border: white solid 2px;
     margin-top: 55px;
-    color:white;
+    color: white;
   }
 
   .achtergrond {
-    background-image: linear-gradient(90deg,purple,pink);
+    background-image: linear-gradient(90deg, purple, pink);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .box {
+    width: 250px;
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .4);
+    transition: transform .2s;
+  }
+
+  /* .box:hover
+{
+ transform:scale(1.2);
+} */
+  .box .percent {
+    width: 150px;
+    height: 150px;
+    position: relative;
+  }
+
+  .box .percent svg {
+    width: 150px;
+    height: 150px;
+    position: relative;
+  }
+
+  .box .percent svg circle {
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+  }
+
+  .box .percent svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+  }
+
+  .box .percent svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 0) / 100);
+    stroke: black;
+  }
+
+  .box .percent .num {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+  }
+
+  .box .percent .num h2 {
+    font-size: 48px;
+  }
+
+  .box .percent .num h2 span {
+    font-size: 24px;
+  }
+
+  .box .text {
+    padding: 10px 0 0;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
   }
 </style>
+<!--navbar-->
 
 <body class="achtergrond">
   <header>
     <div class="navbar">
       <ul>
         <li><a href="index.html"><img src="hz-logo.png"></a></li>
-        <li><a class="active" href="index.html">Hoofdpagina</a></li>
+        <li><a href="index.html">Hoofdpagina</a></li>
         <li><a href="profile.html">Wie ben ik</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a class="active" href="dashboard.html">Dashboard</a></li>
       </ul>
     </div>
   </header>
@@ -206,6 +294,21 @@
       </tr>
     </table>
 
+    <!-- Progress bar -->
+    <div class="box">
+      <div class="percent">
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70"></circle>
+        </svg>
+        <div class="num">
+          <h2>0<span>%</span></h2>
+        </div>
+      </div>
+      <h2 class="text">Percentage behaalde EC's</h2>
+    </div>
+
+    <!--sidebar-->
     <div class="sidebar">
       <li><a
           href="https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/HZ-Onderwijs-en-Examenregeling-2021-2022.pdf"
